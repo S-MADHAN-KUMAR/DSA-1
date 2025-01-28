@@ -157,25 +157,10 @@ class Node {
   
   const list = new LinkedList();
   
-  console.log("List is Empty ?", list.isEmpty());
-  console.log("List Size: ", list.getSize());
-  list.print();
-  
   list.append(10);
   list.print();
+  list.prepend(50);
+  list.print();
+  list.append(30);
+  list.print();
   
-  list.append(40);
-  list.append(50);
-  list.print();
-  list.append(60);
-  list.print();
-  list.insert(20,1)
-  list.print();
-  list.insert(30,2)
-  list.print();
-  list.removeFromValue(50)
-  list.print();
-  list.reverse();
-  console.log("Reversed List:");
-  list.print();
-
