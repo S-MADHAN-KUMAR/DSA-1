@@ -163,4 +163,6 @@ class Node {
   list.print();
   list.append(30);
   list.print();
+  list.insert(5,0);
+  list.print();
   

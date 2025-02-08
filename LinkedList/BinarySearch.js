@@ -1,4 +1,4 @@
-// Binary search only work Sorted array...
+// Binary search only work Sorted array 
 
 function BinarySearch(arr,target){
     let leftIndex =0
@@ -22,4 +22,3 @@ console.log(BinarySearch([-5,3,6,10,19],6))
 console.log(BinarySearch([-5,3,6,10,19],-5))
 
 let arr =[-5,3,6,10,19]
-

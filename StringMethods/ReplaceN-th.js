@@ -5,21 +5,20 @@ function replaceN(str,n){
 
 //   without build in methods
 
-// let result1 = ''
-// let result2 = ''
-// for (let i = 0; i < str.length; i++) {
-//     if (i < 3) {
-//         result1 += str[i] 
-//     } else {
-//         result2 += str[i]
-//     }
-// }
-// return result2+result1
-
+let result1 = ''
+let result2 = ''
+for (let i = 0; i < str.length; i++) {
+    if (i < n) {
+        result1 += str[i] 
+    } else {
+        result2 += str[i]
+    }
+}
+return result2+result1
 
 }
     let str = 'abcdef'
-    let n = 3
+    let n = 4
 
-    console.log(replaceN(str,n));
+    console.log(replaceN(str,n))
     

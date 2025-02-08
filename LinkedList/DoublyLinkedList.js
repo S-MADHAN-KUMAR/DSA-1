@@ -2,14 +2,14 @@ class Node {
     constructor(value) {
       this.value = value;
       this.next = null;
-      this.prev = null; // New pointer for doubly linked list
+      this.prev = null; 
     }
   }
   
   class DoublyLinkedList {
     constructor() {
       this.head = null;
-      this.tail = null; // Maintain a reference to the tail
+      this.tail = null; 
       this.size = 0;
     }
   
@@ -30,9 +30,9 @@ class Node {
       } else {
         node.next = this.head;
         this.head.prev = node;
-        this.head = node;
+        this.head = node
       }
-      this.size++;
+      this.size++
     }
   
     // O(1) if tail is maintained
@@ -42,11 +42,11 @@ class Node {
         this.head = node;
         this.tail = node;
       } else {
-        node.prev = this.tail;
-        this.tail.next = node;
-        this.tail = node;
+        node.prev = this.tail
+        this.tail.next = node
+        this.tail = node
       }
-      this.size++;
+      this.size++
     }
   
     // O(n)
@@ -55,7 +55,7 @@ class Node {
         return null;
       }
       if (index === 0) {
-        this.prepend(value);
+        this.prepend(value)
       } else if (index === this.size) {
         this.append(value);
       } else {
@@ -157,9 +157,9 @@ class Node {
         temp = curr.prev;
         curr.prev = curr.next;
         curr.next = temp;
-        curr = curr.prev; // Move to the previous node (since prev and next are swapped)
+        curr = curr.prev; 
       }
-      // Swap head and tail
+    
       temp = this.head;
       this.head = this.tail;
       this.tail = temp;

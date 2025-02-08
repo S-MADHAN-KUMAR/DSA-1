@@ -22,17 +22,20 @@ class ListNode {
       current.next = new ListNode(value);
     }
   
-    removeDuplicates() {
-      let current = this.head;
-  
-      while (current && current.next) {
-        if (current.value === current.next.value) {
-          current.next = current.next.next; 
-        } else {
-          current = current.next; 
-        }
+    removeDuplicates(){
+      let curr = this.head
+      while(curr){
+          let runner = curr
+          while(runner.next){
+              if(runner.next.value === curr.value){
+                  runner.next = runner.next.next
+              }else{
+                runner =  runner.next
+              }
+          }
+          curr=curr.next
       }
-    }
+  }
   
     printList() {
       let current = this.head;
@@ -41,11 +44,12 @@ class ListNode {
         values.push(current.value);
         current = current.next;
       }
-      console.log(values.join(" -> "));
+      console.log(values.join(" | "));
     }
   }
   
   const list = new LinkedList();
+  list.append(1);
   list.append(1);
   list.append(1);
   list.append(2);

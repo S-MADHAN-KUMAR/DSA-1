@@ -1,4 +1,4 @@
-class ListNode {
+class Node {
     constructor(value) {
       this.value = value;
       this.next = null;
@@ -12,14 +12,14 @@ class ListNode {
   
     append(value) {
       if (!this.head) {
-        this.head = new ListNode(value);
+        this.head = new Node(value);
         return;
       }
       let current = this.head;
       while (current.next) {
         current = current.next;
       }
-      current.next = new ListNode(value);
+      current.next = new Node(value);
     }
   
     isPrime(num) {

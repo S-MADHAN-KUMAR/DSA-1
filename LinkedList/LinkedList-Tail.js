@@ -1,6 +1,6 @@
 class Node {
   constructor(value) {
-      this.value = value; // Set the value directly
+      this.value = value; 
       this.next = null;
   }
 }
@@ -108,7 +108,7 @@ reverse() {
       console.log('List is Empty');
       return;
   }
-  let curr = this.head;
+  let curr = this.head
   let prev = null;
   let next = null;
 
