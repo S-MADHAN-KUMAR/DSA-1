@@ -5,6 +5,8 @@ function replaceN(str,n){
 
 //   without build in methods
 
+//================================================================//
+
 let result1 = ''
 let result2 = ''
 for (let i = 0; i < str.length; i++) {
