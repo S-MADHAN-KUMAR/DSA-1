@@ -8,4 +8,3 @@ function reverseString(str, index = str.length - 1) {
 
 console.log(reverseString("hello")); // Output: "olleh"
 console.log(reverseString("world")); // Output: "dlrow"
-

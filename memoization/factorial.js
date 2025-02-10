@@ -14,3 +14,4 @@ function factorial(n) {
 // Example Usage
 console.log(factorial(5)); // Output: 120
 console.log(factorial(6)); // Output: 720 (faster due to memoization)
+
